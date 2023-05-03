@@ -1,0 +1,92 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Oswald:wght@300;400;500;600;700&display=swap');
+
+/* Default CSS */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Theme CSS */
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 4px 13px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 4px 13px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 4px 13px -5px rgba(0,0,0,0.75);
+}
+
+.text_copied {
+    background: brown;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 27%;
+    display: none;
+}
+
+.container .heading {
+    color: #726d6d;
+    font-weight: 400;
+}
+
+.container .heading, .password_wrapper {
+    padding: 1em;
+    margin: 0;
+}
+
+span.seperator {
+    display: block;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.password {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .5em;
+    height: 7vh;
+}
+
+.copy_password_btn i {
+    display: block;
+    color: #866969;
+    font-size: 20px;
+}
+
+.generated_password {
+    color: #2e2c2c;
+    font-size: 1.2rem;
+}
+
+.generated_password_btn {
+    outline: transparent;
+    border: none;
+    cursor: pointer;
+    background-color: brown;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: .5em 0;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1.5em;
+}
+
+.generated_password_btn:hover {
+    background-color: bisque;
+    color: brown;
+}
