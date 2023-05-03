@@ -24,7 +24,17 @@ function display_password(){
 //copy generated password
 function copy_password(){
     var copy_generated_password = generated_password.innerHTML;
+    navigator.clipboard.writeText(copy_generated_password);
+
+    text_copied.classList.add('display_text_copied');
+    intervalID = setInterval(() => {
+        text_copied.classList.remove('display_text_copied');
+        clearInterval(intervalID);
+    }, 1000)
 }
 
 //when button is clicked - random password will generate
 generated_password_btn.addEventListener('click', display_password);
+
+//when copy icon is clicked - random password will be copied
+copy_password_btn.addEventListener('click', copy_password);

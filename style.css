@@ -35,6 +35,11 @@ body, html {
     display: none;
 }
 
+.text_copied.display_text_copied {
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
 .container .heading {
     color: #726d6d;
     font-weight: 400;
@@ -89,4 +94,17 @@ span.seperator {
 .generated_password_btn:hover {
     background-color: bisque;
     color: brown;
+}
+
+/* Media Query */
+
+@media(max-width:  600px) {
+    .container {
+        width: 100%;
+        margin: 0 1em;
+    }
+    .heading {
+        font-size: 1.5rem;
+        
+    }
 }
